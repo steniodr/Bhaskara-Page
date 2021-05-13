@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="resources/delta-icone.png">
+
+        <title>Bhaskara Atividade</title>
+    </head>
+    <body style="background-image: url('resources/math-background.jpg');">
+        <div class="container pt-5" style="background-color: #c6c6c6; border: rgba(0, 0, 0, 0.5) 3px solid; margin-top: 120px; padding-left: 30px; padding-right: 30px">
+            <div class="row justify-content-evenly">
+                <form method="POST" action="bhaskara.jsp">
+                    <div>
+                        <h2 class="mb-5 fw-normal text-center"><b>Resolvendo equações de Bhaskara</b></h2>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="inputA" class="form-label" >Insira o valor de A:</label>
+                            <input type="number" class="form-control" name="valueA" min="1" required="" aria-describedby="requireDescribe">
+                            <div id="requireDescribe" class="form-text">* Obrigatório (Não aceita 0)</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="inputB" class="form-label" >Insira o valor de B:</label>
+                            <input type="number" class="form-control" name="valueB" required="" aria-describedby="requireDescribe">
+                            <div id="requireDescribe" class="form-text">* Obrigatório</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="inputC" class="form-label" >Insira o valor de C:</label>
+                            <input type="number" class="form-control" name="valueC" required="" aria-describedby="requireDescribe">
+                            <div id="requireDescribe" class="form-text">* Obrigatório</div>
+                        </div>
+                        <div class="mt-3 mb-3 text-center">
+                        <button type="submit" class="ps-5 pe-5 btn" style="background-color:#55C0EF; color: white; font-size:x-large;border-radius: 15px;">Calcular</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
